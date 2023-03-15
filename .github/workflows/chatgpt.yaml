@@ -1,0 +1,10 @@
+name: chatgpt
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  chatgpt:
+    uses: analect-io/.github/.github/workflows/chatgpt.yaml@main
+    secrets: inherit
